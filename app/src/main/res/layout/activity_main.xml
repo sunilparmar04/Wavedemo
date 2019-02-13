@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <in.sp.waveform.SimpleWaveformView
+            android:id="@+id/waveform"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:indicatorColor="@android:color/holo_green_dark"
+            app:waveformColor="#fb6155" />
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/load_file_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
